@@ -53,7 +53,11 @@ Partial Class MAKLUMATPELANGGAN
         Bil = New DataGridViewTextBoxColumn()
         Nama = New DataGridViewTextBoxColumn()
         No_tel = New DataGridViewTextBoxColumn()
+        GbKaedahBayaran = New GroupBox()
+        GbJantina = New GroupBox()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        GbKaedahBayaran.SuspendLayout()
+        GbJantina.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
@@ -123,7 +127,7 @@ Partial Class MAKLUMATPELANGGAN
         ' RbtnLelaki
         ' 
         RbtnLelaki.AutoSize = True
-        RbtnLelaki.Location = New Point(90, 268)
+        RbtnLelaki.Location = New Point(6, 26)
         RbtnLelaki.Name = "RbtnLelaki"
         RbtnLelaki.Size = New Size(68, 24)
         RbtnLelaki.TabIndex = 7
@@ -134,7 +138,7 @@ Partial Class MAKLUMATPELANGGAN
         ' RbtnPerempuan
         ' 
         RbtnPerempuan.AutoSize = True
-        RbtnPerempuan.Location = New Point(90, 298)
+        RbtnPerempuan.Location = New Point(6, 56)
         RbtnPerempuan.Name = "RbtnPerempuan"
         RbtnPerempuan.Size = New Size(104, 24)
         RbtnPerempuan.TabIndex = 8
@@ -145,7 +149,7 @@ Partial Class MAKLUMATPELANGGAN
         ' RbtnCash
         ' 
         RbtnCash.AutoSize = True
-        RbtnCash.Location = New Point(485, 61)
+        RbtnCash.Location = New Point(12, 26)
         RbtnCash.Name = "RbtnCash"
         RbtnCash.Size = New Size(61, 24)
         RbtnCash.TabIndex = 9
@@ -156,7 +160,7 @@ Partial Class MAKLUMATPELANGGAN
         ' RbtnCashless
         ' 
         RbtnCashless.AutoSize = True
-        RbtnCashless.Location = New Point(485, 91)
+        RbtnCashless.Location = New Point(12, 56)
         RbtnCashless.Name = "RbtnCashless"
         RbtnCashless.Size = New Size(85, 24)
         RbtnCashless.TabIndex = 10
@@ -176,7 +180,7 @@ Partial Class MAKLUMATPELANGGAN
         ' LblPerisa
         ' 
         LblPerisa.AutoSize = True
-        LblPerisa.Location = New Point(429, 130)
+        LblPerisa.Location = New Point(429, 154)
         LblPerisa.Name = "LblPerisa"
         LblPerisa.Size = New Size(50, 20)
         LblPerisa.TabIndex = 12
@@ -185,7 +189,7 @@ Partial Class MAKLUMATPELANGGAN
         ' CbMilo
         ' 
         CbMilo.AutoSize = True
-        CbMilo.Location = New Point(485, 129)
+        CbMilo.Location = New Point(485, 153)
         CbMilo.Name = "CbMilo"
         CbMilo.Size = New Size(61, 24)
         CbMilo.TabIndex = 13
@@ -195,7 +199,7 @@ Partial Class MAKLUMATPELANGGAN
         ' CbKopi
         ' 
         CbKopi.AutoSize = True
-        CbKopi.Location = New Point(485, 159)
+        CbKopi.Location = New Point(485, 183)
         CbKopi.Name = "CbKopi"
         CbKopi.Size = New Size(62, 24)
         CbKopi.TabIndex = 14
@@ -205,7 +209,7 @@ Partial Class MAKLUMATPELANGGAN
         ' CbCoklat
         ' 
         CbCoklat.AutoSize = True
-        CbCoklat.Location = New Point(485, 189)
+        CbCoklat.Location = New Point(485, 213)
         CbCoklat.Name = "CbCoklat"
         CbCoklat.Size = New Size(73, 24)
         CbCoklat.TabIndex = 15
@@ -215,7 +219,7 @@ Partial Class MAKLUMATPELANGGAN
         ' CbStrawberry
         ' 
         CbStrawberry.AutoSize = True
-        CbStrawberry.Location = New Point(485, 219)
+        CbStrawberry.Location = New Point(485, 243)
         CbStrawberry.Name = "CbStrawberry"
         CbStrawberry.Size = New Size(102, 24)
         CbStrawberry.TabIndex = 16
@@ -225,7 +229,7 @@ Partial Class MAKLUMATPELANGGAN
         ' CbPisang
         ' 
         CbPisang.AutoSize = True
-        CbPisang.Location = New Point(485, 249)
+        CbPisang.Location = New Point(485, 273)
         CbPisang.Name = "CbPisang"
         CbPisang.Size = New Size(74, 24)
         CbPisang.TabIndex = 17
@@ -257,7 +261,7 @@ Partial Class MAKLUMATPELANGGAN
         ' LblTarikh
         ' 
         LblTarikh.AutoSize = True
-        LblTarikh.Location = New Point(429, 289)
+        LblTarikh.Location = New Point(429, 313)
         LblTarikh.Name = "LblTarikh"
         LblTarikh.Size = New Size(50, 20)
         LblTarikh.TabIndex = 22
@@ -265,7 +269,7 @@ Partial Class MAKLUMATPELANGGAN
         ' 
         ' BtnCreate
         ' 
-        BtnCreate.Location = New Point(30, 533)
+        BtnCreate.Location = New Point(25, 567)
         BtnCreate.Name = "BtnCreate"
         BtnCreate.Size = New Size(94, 29)
         BtnCreate.TabIndex = 24
@@ -274,7 +278,7 @@ Partial Class MAKLUMATPELANGGAN
         ' 
         ' BtnRead
         ' 
-        BtnRead.Location = New Point(130, 533)
+        BtnRead.Location = New Point(125, 567)
         BtnRead.Name = "BtnRead"
         BtnRead.Size = New Size(94, 29)
         BtnRead.TabIndex = 25
@@ -283,7 +287,7 @@ Partial Class MAKLUMATPELANGGAN
         ' 
         ' BtnUpdate
         ' 
-        BtnUpdate.Location = New Point(230, 533)
+        BtnUpdate.Location = New Point(225, 567)
         BtnUpdate.Name = "BtnUpdate"
         BtnUpdate.Size = New Size(94, 29)
         BtnUpdate.TabIndex = 26
@@ -292,7 +296,7 @@ Partial Class MAKLUMATPELANGGAN
         ' 
         ' BtnDelete
         ' 
-        BtnDelete.Location = New Point(330, 533)
+        BtnDelete.Location = New Point(325, 567)
         BtnDelete.Name = "BtnDelete"
         BtnDelete.Size = New Size(94, 29)
         BtnDelete.TabIndex = 27
@@ -301,7 +305,7 @@ Partial Class MAKLUMATPELANGGAN
         ' 
         ' DTPTarikh
         ' 
-        DTPTarikh.Location = New Point(485, 282)
+        DTPTarikh.Location = New Point(485, 306)
         DTPTarikh.Name = "DTPTarikh"
         DTPTarikh.Size = New Size(250, 27)
         DTPTarikh.TabIndex = 28
@@ -310,7 +314,7 @@ Partial Class MAKLUMATPELANGGAN
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {Bil, Nama, No_tel})
-        DataGridView1.Location = New Point(35, 340)
+        DataGridView1.Location = New Point(30, 374)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
         DataGridView1.Size = New Size(389, 188)
@@ -337,11 +341,35 @@ Partial Class MAKLUMATPELANGGAN
         No_tel.Name = "No_tel"
         No_tel.Width = 125
         ' 
+        ' GbKaedahBayaran
+        ' 
+        GbKaedahBayaran.Controls.Add(RbtnCash)
+        GbKaedahBayaran.Controls.Add(RbtnCashless)
+        GbKaedahBayaran.Location = New Point(485, 58)
+        GbKaedahBayaran.Name = "GbKaedahBayaran"
+        GbKaedahBayaran.Size = New Size(250, 89)
+        GbKaedahBayaran.TabIndex = 30
+        GbKaedahBayaran.TabStop = False
+        GbKaedahBayaran.Text = "GroupBox1"
+        ' 
+        ' GbJantina
+        ' 
+        GbJantina.Controls.Add(RbtnLelaki)
+        GbJantina.Controls.Add(RbtnPerempuan)
+        GbJantina.Location = New Point(90, 273)
+        GbJantina.Name = "GbJantina"
+        GbJantina.Size = New Size(250, 84)
+        GbJantina.TabIndex = 31
+        GbJantina.TabStop = False
+        GbJantina.Text = "GroupBox2"
+        ' 
         ' MAKLUMATPELANGGAN
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 585)
+        ClientSize = New Size(800, 614)
+        Controls.Add(GbJantina)
+        Controls.Add(GbKaedahBayaran)
         Controls.Add(DataGridView1)
         Controls.Add(DTPTarikh)
         Controls.Add(BtnDelete)
@@ -359,10 +387,6 @@ Partial Class MAKLUMATPELANGGAN
         Controls.Add(CbMilo)
         Controls.Add(LblPerisa)
         Controls.Add(LblKaedahBayaran)
-        Controls.Add(RbtnCashless)
-        Controls.Add(RbtnCash)
-        Controls.Add(RbtnPerempuan)
-        Controls.Add(RbtnLelaki)
         Controls.Add(LblJantina)
         Controls.Add(LblNegeri)
         Controls.Add(CbNegeri)
@@ -373,6 +397,10 @@ Partial Class MAKLUMATPELANGGAN
         Name = "MAKLUMATPELANGGAN"
         Text = "MAKLUMAT PELANGGAN"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        GbKaedahBayaran.ResumeLayout(False)
+        GbKaedahBayaran.PerformLayout()
+        GbJantina.ResumeLayout(False)
+        GbJantina.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -408,5 +436,7 @@ Partial Class MAKLUMATPELANGGAN
     Friend WithEvents Bil As DataGridViewTextBoxColumn
     Friend WithEvents Nama As DataGridViewTextBoxColumn
     Friend WithEvents No_tel As DataGridViewTextBoxColumn
+    Friend WithEvents GbKaedahBayaran As GroupBox
+    Friend WithEvents GbJantina As GroupBox
 
 End Class

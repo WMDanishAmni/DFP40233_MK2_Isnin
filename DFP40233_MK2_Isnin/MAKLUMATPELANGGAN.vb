@@ -18,4 +18,20 @@
     Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles BtnDelete.Click
 
     End Sub
+
+    Private Sub RbtnCash_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnCash.CheckedChanged
+
+    End Sub
+
+    Private Sub RbtnCashless_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnCashless.CheckedChanged
+
+    End Sub
+
+    Private Sub RbtnLelaki_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnLelaki.CheckedChanged
+
+    End Sub
+
+    Private Sub RbtnPerempuan_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnPerempuan.CheckedChanged
+
+    End Sub
 End Class
