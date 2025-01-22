@@ -26,32 +26,32 @@ Partial Class MAKLUMATPELANGGAN
         LblNama = New Label()
         LblNotel = New Label()
         LblAlamat = New Label()
-        ComboBox1 = New ComboBox()
-        Label5 = New Label()
-        Label6 = New Label()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        RadioButton3 = New RadioButton()
-        RadioButton4 = New RadioButton()
-        Label7 = New Label()
-        Label8 = New Label()
-        CheckBox1 = New CheckBox()
-        CheckBox2 = New CheckBox()
-        CheckBox3 = New CheckBox()
-        CheckBox4 = New CheckBox()
-        CheckBox5 = New CheckBox()
+        CbNegeri = New ComboBox()
+        LblNegeri = New Label()
+        LblJantina = New Label()
+        RbtnLelaki = New RadioButton()
+        RbtnPerempuan = New RadioButton()
+        RbtnCash = New RadioButton()
+        RbtnCashless = New RadioButton()
+        LblKaedahBayaran = New Label()
+        LblPerisa = New Label()
+        CbMilo = New CheckBox()
+        CbKopi = New CheckBox()
+        CbCoklat = New CheckBox()
+        CbStrawberry = New CheckBox()
+        CbPisang = New CheckBox()
         TxtNama = New TextBox()
         TxtNotel = New TextBox()
         TxtAlamat = New TextBox()
-        Label9 = New Label()
+        LblTarikh = New Label()
+        BtnCreate = New Button()
+        BtnRead = New Button()
+        BtnUpdate = New Button()
+        BtnDelete = New Button()
+        DTPTarikh = New DateTimePicker()
         DataGridView1 = New DataGridView()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        DateTimePicker1 = New DateTimePicker()
         Bil = New DataGridViewTextBoxColumn()
-        Name = New DataGridViewTextBoxColumn()
+        Nama = New DataGridViewTextBoxColumn()
         No_tel = New DataGridViewTextBoxColumn()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -93,144 +93,144 @@ Partial Class MAKLUMATPELANGGAN
         LblAlamat.TabIndex = 3
         LblAlamat.Text = "Alamat:"
         ' 
-        ' ComboBox1
+        ' CbNegeri
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Johor", "Kedah", "Kelantan", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Perlis", "Sabah", "Sarawak", "Selangor", "Terangganu", "Kuala Lumpur", "Putrajaya"})
-        ComboBox1.Location = New Point(90, 234)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(253, 28)
-        ComboBox1.TabIndex = 4
+        CbNegeri.FormattingEnabled = True
+        CbNegeri.Items.AddRange(New Object() {"Johor", "Kedah", "Kelantan", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Perlis", "Sabah", "Sarawak", "Selangor", "Terangganu", "Kuala Lumpur", "Putrajaya"})
+        CbNegeri.Location = New Point(90, 234)
+        CbNegeri.Name = "CbNegeri"
+        CbNegeri.Size = New Size(253, 28)
+        CbNegeri.TabIndex = 4
         ' 
-        ' Label5
+        ' LblNegeri
         ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(27, 237)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(57, 20)
-        Label5.TabIndex = 5
-        Label5.Text = "Negeri:"
+        LblNegeri.AutoSize = True
+        LblNegeri.Location = New Point(27, 237)
+        LblNegeri.Name = "LblNegeri"
+        LblNegeri.Size = New Size(57, 20)
+        LblNegeri.TabIndex = 5
+        LblNegeri.Text = "Negeri:"
         ' 
-        ' Label6
+        ' LblJantina
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(26, 268)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(58, 20)
-        Label6.TabIndex = 6
-        Label6.Text = "Jantina:"
+        LblJantina.AutoSize = True
+        LblJantina.Location = New Point(26, 268)
+        LblJantina.Name = "LblJantina"
+        LblJantina.Size = New Size(58, 20)
+        LblJantina.TabIndex = 6
+        LblJantina.Text = "Jantina:"
         ' 
-        ' RadioButton1
+        ' RbtnLelaki
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(90, 268)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(68, 24)
-        RadioButton1.TabIndex = 7
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "Lelaki"
-        RadioButton1.UseVisualStyleBackColor = True
+        RbtnLelaki.AutoSize = True
+        RbtnLelaki.Location = New Point(90, 268)
+        RbtnLelaki.Name = "RbtnLelaki"
+        RbtnLelaki.Size = New Size(68, 24)
+        RbtnLelaki.TabIndex = 7
+        RbtnLelaki.TabStop = True
+        RbtnLelaki.Text = "Lelaki"
+        RbtnLelaki.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton2
+        ' RbtnPerempuan
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(90, 298)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(104, 24)
-        RadioButton2.TabIndex = 8
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "Perempuan"
-        RadioButton2.UseVisualStyleBackColor = True
+        RbtnPerempuan.AutoSize = True
+        RbtnPerempuan.Location = New Point(90, 298)
+        RbtnPerempuan.Name = "RbtnPerempuan"
+        RbtnPerempuan.Size = New Size(104, 24)
+        RbtnPerempuan.TabIndex = 8
+        RbtnPerempuan.TabStop = True
+        RbtnPerempuan.Text = "Perempuan"
+        RbtnPerempuan.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton3
+        ' RbtnCash
         ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(485, 61)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(61, 24)
-        RadioButton3.TabIndex = 9
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "Cash"
-        RadioButton3.UseVisualStyleBackColor = True
+        RbtnCash.AutoSize = True
+        RbtnCash.Location = New Point(485, 61)
+        RbtnCash.Name = "RbtnCash"
+        RbtnCash.Size = New Size(61, 24)
+        RbtnCash.TabIndex = 9
+        RbtnCash.TabStop = True
+        RbtnCash.Text = "Cash"
+        RbtnCash.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton4
+        ' RbtnCashless
         ' 
-        RadioButton4.AutoSize = True
-        RadioButton4.Location = New Point(485, 91)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(85, 24)
-        RadioButton4.TabIndex = 10
-        RadioButton4.TabStop = True
-        RadioButton4.Text = "Cashless"
-        RadioButton4.UseVisualStyleBackColor = True
+        RbtnCashless.AutoSize = True
+        RbtnCashless.Location = New Point(485, 91)
+        RbtnCashless.Name = "RbtnCashless"
+        RbtnCashless.Size = New Size(85, 24)
+        RbtnCashless.TabIndex = 10
+        RbtnCashless.TabStop = True
+        RbtnCashless.Text = "Cashless"
+        RbtnCashless.UseVisualStyleBackColor = True
         ' 
-        ' Label7
+        ' LblKaedahBayaran
         ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(360, 61)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(119, 20)
-        Label7.TabIndex = 11
-        Label7.Text = "Kaedah Bayaran:"
+        LblKaedahBayaran.AutoSize = True
+        LblKaedahBayaran.Location = New Point(360, 61)
+        LblKaedahBayaran.Name = "LblKaedahBayaran"
+        LblKaedahBayaran.Size = New Size(119, 20)
+        LblKaedahBayaran.TabIndex = 11
+        LblKaedahBayaran.Text = "Kaedah Bayaran:"
         ' 
-        ' Label8
+        ' LblPerisa
         ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(429, 130)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(50, 20)
-        Label8.TabIndex = 12
-        Label8.Text = "Perisa:"
+        LblPerisa.AutoSize = True
+        LblPerisa.Location = New Point(429, 130)
+        LblPerisa.Name = "LblPerisa"
+        LblPerisa.Size = New Size(50, 20)
+        LblPerisa.TabIndex = 12
+        LblPerisa.Text = "Perisa:"
         ' 
-        ' CheckBox1
+        ' CbMilo
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(485, 129)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(61, 24)
-        CheckBox1.TabIndex = 13
-        CheckBox1.Text = "Milo"
-        CheckBox1.UseVisualStyleBackColor = True
+        CbMilo.AutoSize = True
+        CbMilo.Location = New Point(485, 129)
+        CbMilo.Name = "CbMilo"
+        CbMilo.Size = New Size(61, 24)
+        CbMilo.TabIndex = 13
+        CbMilo.Text = "Milo"
+        CbMilo.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox2
+        ' CbKopi
         ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.Location = New Point(485, 159)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(62, 24)
-        CheckBox2.TabIndex = 14
-        CheckBox2.Text = "Kopi"
-        CheckBox2.UseVisualStyleBackColor = True
+        CbKopi.AutoSize = True
+        CbKopi.Location = New Point(485, 159)
+        CbKopi.Name = "CbKopi"
+        CbKopi.Size = New Size(62, 24)
+        CbKopi.TabIndex = 14
+        CbKopi.Text = "Kopi"
+        CbKopi.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox3
+        ' CbCoklat
         ' 
-        CheckBox3.AutoSize = True
-        CheckBox3.Location = New Point(485, 189)
-        CheckBox3.Name = "CheckBox3"
-        CheckBox3.Size = New Size(73, 24)
-        CheckBox3.TabIndex = 15
-        CheckBox3.Text = "Coklat"
-        CheckBox3.UseVisualStyleBackColor = True
+        CbCoklat.AutoSize = True
+        CbCoklat.Location = New Point(485, 189)
+        CbCoklat.Name = "CbCoklat"
+        CbCoklat.Size = New Size(73, 24)
+        CbCoklat.TabIndex = 15
+        CbCoklat.Text = "Coklat"
+        CbCoklat.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox4
+        ' CbStrawberry
         ' 
-        CheckBox4.AutoSize = True
-        CheckBox4.Location = New Point(485, 219)
-        CheckBox4.Name = "CheckBox4"
-        CheckBox4.Size = New Size(102, 24)
-        CheckBox4.TabIndex = 16
-        CheckBox4.Text = "Strawberry"
-        CheckBox4.UseVisualStyleBackColor = True
+        CbStrawberry.AutoSize = True
+        CbStrawberry.Location = New Point(485, 219)
+        CbStrawberry.Name = "CbStrawberry"
+        CbStrawberry.Size = New Size(102, 24)
+        CbStrawberry.TabIndex = 16
+        CbStrawberry.Text = "Strawberry"
+        CbStrawberry.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox5
+        ' CbPisang
         ' 
-        CheckBox5.AutoSize = True
-        CheckBox5.Location = New Point(485, 249)
-        CheckBox5.Name = "CheckBox5"
-        CheckBox5.Size = New Size(74, 24)
-        CheckBox5.TabIndex = 17
-        CheckBox5.Text = "Pisang"
-        CheckBox5.UseVisualStyleBackColor = True
+        CbPisang.AutoSize = True
+        CbPisang.Location = New Point(485, 249)
+        CbPisang.Name = "CbPisang"
+        CbPisang.Size = New Size(74, 24)
+        CbPisang.TabIndex = 17
+        CbPisang.Text = "Pisang"
+        CbPisang.UseVisualStyleBackColor = True
         ' 
         ' TxtNama
         ' 
@@ -254,67 +254,67 @@ Partial Class MAKLUMATPELANGGAN
         TxtAlamat.Size = New Size(253, 98)
         TxtAlamat.TabIndex = 20
         ' 
-        ' Label9
+        ' LblTarikh
         ' 
-        Label9.AutoSize = True
-        Label9.Location = New Point(429, 287)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(50, 20)
-        Label9.TabIndex = 22
-        Label9.Text = "Tarikh:"
+        LblTarikh.AutoSize = True
+        LblTarikh.Location = New Point(429, 289)
+        LblTarikh.Name = "LblTarikh"
+        LblTarikh.Size = New Size(50, 20)
+        LblTarikh.TabIndex = 22
+        LblTarikh.Text = "Tarikh:"
+        ' 
+        ' BtnCreate
+        ' 
+        BtnCreate.Location = New Point(30, 533)
+        BtnCreate.Name = "BtnCreate"
+        BtnCreate.Size = New Size(94, 29)
+        BtnCreate.TabIndex = 24
+        BtnCreate.Text = "Create"
+        BtnCreate.UseVisualStyleBackColor = True
+        ' 
+        ' BtnRead
+        ' 
+        BtnRead.Location = New Point(130, 533)
+        BtnRead.Name = "BtnRead"
+        BtnRead.Size = New Size(94, 29)
+        BtnRead.TabIndex = 25
+        BtnRead.Text = "Read"
+        BtnRead.UseVisualStyleBackColor = True
+        ' 
+        ' BtnUpdate
+        ' 
+        BtnUpdate.Location = New Point(230, 533)
+        BtnUpdate.Name = "BtnUpdate"
+        BtnUpdate.Size = New Size(94, 29)
+        BtnUpdate.TabIndex = 26
+        BtnUpdate.Text = "Update"
+        BtnUpdate.UseVisualStyleBackColor = True
+        ' 
+        ' BtnDelete
+        ' 
+        BtnDelete.Location = New Point(330, 533)
+        BtnDelete.Name = "BtnDelete"
+        BtnDelete.Size = New Size(94, 29)
+        BtnDelete.TabIndex = 27
+        BtnDelete.Text = "Delete"
+        BtnDelete.UseVisualStyleBackColor = True
+        ' 
+        ' DTPTarikh
+        ' 
+        DTPTarikh.Location = New Point(485, 282)
+        DTPTarikh.Name = "DTPTarikh"
+        DTPTarikh.Size = New Size(250, 27)
+        DTPTarikh.TabIndex = 28
         ' 
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Bil, Name, No_tel})
-        DataGridView1.Location = New Point(30, 339)
+        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Bil, Nama, No_tel})
+        DataGridView1.Location = New Point(35, 340)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(394, 188)
-        DataGridView1.TabIndex = 23
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(30, 533)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 24
-        Button1.Text = "Create"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(130, 533)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 25
-        Button2.Text = "Read"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Button3
-        ' 
-        Button3.Location = New Point(230, 533)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(94, 29)
-        Button3.TabIndex = 26
-        Button3.Text = "Update"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' Button4
-        ' 
-        Button4.Location = New Point(330, 533)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(94, 29)
-        Button4.TabIndex = 27
-        Button4.Text = "Delete"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' DateTimePicker1
-        ' 
-        DateTimePicker1.Location = New Point(485, 282)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(250, 27)
-        DateTimePicker1.TabIndex = 28
+        DataGridView1.Size = New Size(389, 188)
+        DataGridView1.TabIndex = 29
         ' 
         ' Bil
         ' 
@@ -323,12 +323,12 @@ Partial Class MAKLUMATPELANGGAN
         Bil.Name = "Bil"
         Bil.Width = 125
         ' 
-        ' Name
+        ' Nama
         ' 
-        Name.HeaderText = "Name"
-        Name.MinimumWidth = 6
-        Name.Name = "Name"
-        Name.Width = 125
+        Nama.HeaderText = "Nama"
+        Nama.MinimumWidth = 6
+        Nama.Name = "Nama"
+        Nama.Width = 125
         ' 
         ' No_tel
         ' 
@@ -342,30 +342,30 @@ Partial Class MAKLUMATPELANGGAN
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 585)
-        Controls.Add(DateTimePicker1)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
         Controls.Add(DataGridView1)
-        Controls.Add(Label9)
+        Controls.Add(DTPTarikh)
+        Controls.Add(BtnDelete)
+        Controls.Add(BtnUpdate)
+        Controls.Add(BtnRead)
+        Controls.Add(BtnCreate)
+        Controls.Add(LblTarikh)
         Controls.Add(TxtAlamat)
         Controls.Add(TxtNotel)
         Controls.Add(TxtNama)
-        Controls.Add(CheckBox5)
-        Controls.Add(CheckBox4)
-        Controls.Add(CheckBox3)
-        Controls.Add(CheckBox2)
-        Controls.Add(CheckBox1)
-        Controls.Add(Label8)
-        Controls.Add(Label7)
-        Controls.Add(RadioButton4)
-        Controls.Add(RadioButton3)
-        Controls.Add(RadioButton2)
-        Controls.Add(RadioButton1)
-        Controls.Add(Label6)
-        Controls.Add(Label5)
-        Controls.Add(ComboBox1)
+        Controls.Add(CbPisang)
+        Controls.Add(CbStrawberry)
+        Controls.Add(CbCoklat)
+        Controls.Add(CbKopi)
+        Controls.Add(CbMilo)
+        Controls.Add(LblPerisa)
+        Controls.Add(LblKaedahBayaran)
+        Controls.Add(RbtnCashless)
+        Controls.Add(RbtnCash)
+        Controls.Add(RbtnPerempuan)
+        Controls.Add(RbtnLelaki)
+        Controls.Add(LblJantina)
+        Controls.Add(LblNegeri)
+        Controls.Add(CbNegeri)
         Controls.Add(LblAlamat)
         Controls.Add(LblNotel)
         Controls.Add(LblNama)
@@ -381,32 +381,32 @@ Partial Class MAKLUMATPELANGGAN
     Friend WithEvents LblNama As Label
     Friend WithEvents LblNotel As Label
     Friend WithEvents LblAlamat As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents CbNegeri As ComboBox
+    Friend WithEvents LblNegeri As Label
+    Friend WithEvents LblJantina As Label
+    Friend WithEvents RbtnLelaki As RadioButton
+    Friend WithEvents RbtnPerempuan As RadioButton
+    Friend WithEvents RbtnCash As RadioButton
+    Friend WithEvents RbtnCashless As RadioButton
+    Friend WithEvents LblKaedahBayaran As Label
+    Friend WithEvents LblPerisa As Label
+    Friend WithEvents CbMilo As CheckBox
+    Friend WithEvents CbKopi As CheckBox
+    Friend WithEvents CbCoklat As CheckBox
+    Friend WithEvents CbStrawberry As CheckBox
+    Friend WithEvents CbPisang As CheckBox
     Friend WithEvents TxtNama As TextBox
     Friend WithEvents TxtNotel As TextBox
     Friend WithEvents TxtAlamat As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents LblTarikh As Label
+    Friend WithEvents BtnCreate As Button
+    Friend WithEvents BtnRead As Button
+    Friend WithEvents BtnUpdate As Button
+    Friend WithEvents BtnDelete As Button
+    Friend WithEvents DTPTarikh As DateTimePicker
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Bil As DataGridViewTextBoxColumn
-    Friend WithEvents Name As DataGridViewTextBoxColumn
+    Friend WithEvents Nama As DataGridViewTextBoxColumn
     Friend WithEvents No_tel As DataGridViewTextBoxColumn
 
 End Class

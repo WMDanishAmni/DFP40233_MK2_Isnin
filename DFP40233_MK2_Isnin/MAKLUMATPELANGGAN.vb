@@ -1,13 +1,21 @@
 ﻿Public Class MAKLUMATPELANGGAN
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TxtAlamat.TextChanged
+    Private Sub BtnCreate_Click(sender As Object, e As EventArgs) Handles BtnCreate.Click
+        Dim strNama, intNotel, intBil As String
+
+        strNama = TxtNama.Text
+        intNotel = TxtNotel.Text
 
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+    Private Sub BtnRead_Click(sender As Object, e As EventArgs) Handles BtnRead.Click
 
     End Sub
 
-    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs)
+    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
+
+    End Sub
+
+    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles BtnDelete.Click
 
     End Sub
 End Class
