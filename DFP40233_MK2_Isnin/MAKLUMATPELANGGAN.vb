@@ -1,9 +1,9 @@
-﻿Public Class MAKLUMATPELANGGAN
+﻿Public Class FrmMaklumatPelanggan
     Private Sub BtnCreate_Click(sender As Object, e As EventArgs) Handles BtnCreate.Click
         Dim strNama, intNotel, intBil As String
 
-        strNama = TxtNama.Text
-        intNotel = TxtNotel.Text
+        strNama = txtNama.Text
+        intNotel = txtNotel.Text
 
     End Sub
 
@@ -19,19 +19,19 @@
 
     End Sub
 
-    Private Sub RbtnCash_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnCash.CheckedChanged
+    Private Sub RbtnCash_CheckedChanged(sender As Object, e As EventArgs) Handles rdbCash.CheckedChanged
 
     End Sub
 
-    Private Sub RbtnCashless_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnCashless.CheckedChanged
+    Private Sub RbtnCashless_CheckedChanged(sender As Object, e As EventArgs) Handles rdbCashless.CheckedChanged
 
     End Sub
 
-    Private Sub RbtnLelaki_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnLelaki.CheckedChanged
+    Private Sub RbtnLelaki_CheckedChanged(sender As Object, e As EventArgs) Handles rdbLelaki.CheckedChanged
 
     End Sub
 
-    Private Sub RbtnPerempuan_CheckedChanged(sender As Object, e As EventArgs) Handles RbtnPerempuan.CheckedChanged
+    Private Sub RbtnPerempuan_CheckedChanged(sender As Object, e As EventArgs) Handles rdbPerempuan.CheckedChanged
 
     End Sub
 End Class
